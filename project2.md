@@ -1,9 +1,7 @@
-<title> AE 311: Individual Project </title>
-
-#### November 17th, 2021
-
-Varsha Krishnakumar, varshak3@illinois.edu
-
+---
+title: "AE 311: Individual Project 2"
+date: \today
+author: "Varsha Krishnakumar, varshak3@illinois.edu"
 ---  
 
 #### 1. What assumptions are you making in developing your vortex panel method?
@@ -14,7 +12,32 @@ In developing the vortex panel method, it can be assumed that 2-dimensional flow
 The airfoil surface can be broken down into numerous discrete panels. To use the condition ∇²φ = 0, *Potential Flow* can be assumed, as well as the satisfaction of the *Kutta* condition. In developing the vortex panel method, the *First-Order Method* will be acquired. 
 
 #### 2. Create a sketch that defines your nomenclature. How are the panels indexed and defined, what local coordinate systems and variables are needed to define quantities on each panel, etc.? 
-   
+
+![alt text](Q2sketch.PNG)
+
+The surface of the airfoil can be broken down into discrete "panels", where each panel is represented using a vortex sheet of linear distribution. The reasoning for this theory is that as the number of panels are increased, the velocity boundary conditions are imposed on an increasingly better representation of the airfoil surface. On the top surface of the airfoil, each panel is represented by $i$, and a numerical incrementation of 1. Similarly, each panel on the bottom surface is represented by $j$., and a numerical incrementation of 1. 
+
+*The control point at j can be written as:*                
+    $\hat{x_j} = {x_j} + \frac{Δs_j^x}{2}$, 
+
+    where  
+    
+$Δs_j^x = Δs_j cosθ_j$
+
+    And
+
+$\hat{y_j} = y_j + \frac{Δs_j^y}{2}$, 
+
+    where
+$Δs_j^y = Δs_j sinθ_j$
+
+The vortex strength at some $s_j$ along panel $j$ is:
+
+$γ(s_j) = γ_j + (γ_{j + 1} - γ)\frac{s_j}{Δs_j}$
+
+
+
+
 
 #### 3. What is the procedure for developing the panel method? 
 
