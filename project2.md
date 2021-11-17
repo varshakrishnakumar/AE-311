@@ -20,23 +20,23 @@ The surface of the airfoil can be broken down into discrete "panels", where each
 *The control point at j can be written as:* 
 
 
-    $\hat{x_j} = {x_j} + \frac{Δs_j^x}{2}$, 
+$\hat{x_j} = {x_j} + \frac{Δs_j^x}{2}$,
 
-    where 
+where 
 
-    $Δs_j^x = Δs_j cosθ_j$
+$$Δs_j^x = Δs_j cosθ_j$$
 
-    And
+And
 
-    $\hat{y_j} = y_j + \frac{Δs_j^y}{2}$, 
+$\hat{y_j} = y_j + \frac{Δs_j^y}{2}$,
 
-    where
+where
 
-    $Δs_j^y = Δs_j sinθ_j$
+$$Δs_j^y = Δs_j sinθ_j$$
 
 The vortex strength at some $s_j$ along panel $j$ is:
 
-$γ(s_j) = γ_j + (γ_{j + 1} - γ)\frac{s_j}{Δs_j}$
+$$γ(s_j) = γ_j + (γ_{j + 1} - γ)\frac{s_j}{Δs_j}$$
 
 
 
