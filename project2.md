@@ -1,7 +1,9 @@
----
-title: "AE 311: Individual Project 2"
-date: \today
-author: "Varsha Krishnakumar, varshak3@illinois.edu"
+<title> AE 311: Individual Project </title>
+
+#### November 17th, 2021
+
+Varsha Krishnakumar, varshak3@illinois.edu
+
 ---  
 
 #### 1. What assumptions are you making in developing your vortex panel method?
