@@ -9,7 +9,7 @@ author: "Varsha Krishnakumar, varshak3@illinois.edu"
 
 In developing the vortex panel method, it can be assumed that 2-dimensional flow (that is steady, inviscid, incompressible and irrotational) is the same as it approaches the airfoil, as well as when the flow is far away from the airfoil. It can also be assumed that the airfoil is a streamline, and correspondingly, no-penetration velocity can be assumed. The approaching flow can be surmised as tangent to the airfoil. 
 
-The airfoil surface can be broken down into numerous discrete panels. To use the condition $\Delta^²\Phi = 0$, *Potential Flow* can be assumed, as well as the satisfaction of the *Kutta* condition. In developing the vortex panel method, the *First-Order Method* will be acquired. 
+The airfoil surface can be broken down into numerous discrete panels. To use the condition ${{\Delta^2}{\Phi} = 0}$, *Potential Flow* can be assumed, as well as the satisfaction of the *Kutta* condition. In developing the vortex panel method, the *First-Order Method* will be acquired. 
 
 #### **2. Create a sketch that defines your nomenclature. How are the panels indexed and defined, what local coordinate systems and variables are needed to define quantities on each panel, etc.?** 
 
@@ -20,23 +20,23 @@ The surface of the airfoil can be broken down into discrete "panels", where each
 *The control point at j can be written as:* 
 
 
-$\hat{x_j} = {x_j} + \frac{Δs_j^x}{2}$,
+$\hat{x_j} = {x_j} + \frac{\Delta{s_j^x}}{2}$,
 
 where 
 
-$$Δs_j^x = Δs_j cosθ_j$$
+$${\Delta}s_j^x = {\Delta}s_j cos{\theta_j}$$
 
 And
 
-$\hat{y_j} = y_j + \frac{Δs_j^y}{2}$,
+$\hat{y_j} = y_j + \frac{\Delta{s_j^y}}{2}$,
 
 where
 
-$$Δs_j^y = Δs_j sinθ_j$$
+$$\Delta{s_j^y} = {\Delta}s_j sin{\theta_j}$$
 
 The vortex strength at some $s_j$ along panel $j$ is:
 
-$$γ(s_j) = γ_j + (γ_{j + 1} - γ)\frac{s_j}{Δs_j}$$
+$${\gamma}(s_j) = {\gamma_j} + ({\gamma_{j + 1}} - {\gamma})\frac{s_j}{{\Delta}s_j}$$
 
 
 
@@ -55,5 +55,5 @@ The unknown variables to be determined are the spanwise vortex strength distribu
 
 The sum of the distribution, $\Gamma$, determines *the lift per unit span*. The objective of the panel technique is to solve for $\gamma_j$ , summed from $j = 1$ to $N$, such that the body surface becomes streamlined in relation to the flow. Using this information, the tangential velocity equation can be used to solve for tangential velocities, and correspondingly, the *Pressure Coefficients* of each panel.
 
-#### 5. Develop a linear (matrix) system to solve for the problem unknowns. Your final result should be a matrix system that looks like $A = b$, where the unknowns are contained in the vector . This linear system should be solvable, so be sure you incorporate all equations needed to fully constrain the solution.
+#### **5. Develop a linear (matrix) system to solve for the problem unknowns. Your final result should be a matrix system that looks like $Ax = b$, where the unknowns are contained in the vector $x$. This linear system should be solvable, so be sure you incorporate all equations needed to fully constrain the solution.**
 

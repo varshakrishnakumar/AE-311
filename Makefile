@@ -5,7 +5,6 @@ docx: project2.docx
 
 project2.pdf: project2.md 
 	pandoc \
-		-s \
 		--pdf-engine=C:\Users\HP\AppData\Local\Programs\MiKTeX\miktex\bin\x64\pdflatex \
 		project2.md -o project2.pdf
 
