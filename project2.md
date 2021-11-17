@@ -18,27 +18,28 @@ The airfoil surface can be broken down into numerous discrete panels. To use the
 The surface of the airfoil can be broken down into discrete "panels", where each panel is represented using a vortex sheet of linear distribution. The reasoning for this theory is that as the number of panels are increased, the velocity boundary conditions are imposed on an increasingly better representation of the airfoil surface. On the top surface of the airfoil, each panel is represented by $i$, and a numerical incrementation of 1. Similarly, each panel on the bottom surface is represented by $j$., and a numerical incrementation of 1. 
 
 *The control point at j can be written as:* 
+    <img src="https://render.githubusercontent.com/render/math?math=\hat{x_j}={x_j}%2B\frac{Δs_j^x}{2}">
 
-
-$\hat{x_j} = {x_j} + \frac{Δs_j^x}{2}$,
+<!-- $\hat{x_j} = {x_j} + \frac{Δs_j^x}{2}$, -->
 
 where 
-
-<img src="https://render.githubusercontent.com/render/math?math=\Delta{s_j^x}=\Delta{s_j}cos\theta_j">
+    <img src="https://render.githubusercontent.com/render/math?math=\Delta{s_j^x}=\Delta{s_j}cos\theta_j">
 
 <!-- $$Δs_j^x = Δs_j cosθ_j$$ -->
 
 And
+    <img src="https://render.githubusercontent.com/render/math?math=\hat{y_j} = y_j%2B\frac{Δs_j^y}{2},">
 
-$\hat{y_j} = y_j + \frac{Δs_j^y}{2}$,
+<!-- $\hat{y_j} = y_j + \frac{Δs_j^y}{2}$, -->
 
 where
-
-$$Δs_j^y = Δs_j sinθ_j$$
+    <img src="https://render.githubusercontent.com/render/math?math=\Delta{s_j^y}=\Delta{s_j}{sinθ_j},">
+    <!-- $$Δs_j^y = Δs_j sinθ_j$$ -->
 
 The vortex strength at some $s_j$ along panel $j$ is:
+    <img src="https://render.githubusercontent.com/render/math?math=\gamma{(s_j)}={\gamma_j}%2B{(\gamma_{j%2B1}-\gamma)}\frac{s_j}{\Delta{s_j}}">
 
-$$γ(s_j) = γ_j + (γ_{j + 1} - γ)\frac{s_j}{Δs_j}$$
+<!-- $$γ(s_j) = γ_j + (γ_{j + 1} - γ)\frac{s_j}{Δs_j}$$ -->
 
 
 
