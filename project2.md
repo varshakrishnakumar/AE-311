@@ -24,7 +24,9 @@ $\hat{x_j} = {x_j} + \frac{Δs_j^x}{2}$,
 
 where 
 
-$$Δs_j^x = Δs_j cosθ_j$$
+<img src="https://render.githubusercontent.com/render/math?math=\Delta{s_j^x}=\Delta{s_j}cos\theta_j">
+
+<!-- $$Δs_j^x = Δs_j cosθ_j$$ -->
 
 And
 
@@ -38,8 +40,6 @@ The vortex strength at some $s_j$ along panel $j$ is:
 
 $$γ(s_j) = γ_j + (γ_{j + 1} - γ)\frac{s_j}{Δs_j}$$
 
-
-F=P(1%2B\frac{i}{n})^{nt} 
 
 
 
