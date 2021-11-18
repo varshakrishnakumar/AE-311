@@ -1,28 +1,35 @@
+#Integrating 5 for extra credit
+
+import sympy
 import numpy as np
-import numpy.linalg as la
-import math
+sympy.init_printing(use_unicode=False, wrap_line=False)
+i = sympy.Symbol('i')
+j = sympy.Symbol('j')
 
-## Using standard equations 
+delta_sj = sympy.Symbol('delta_sj')
+a = sympy.Symbol('a')
+b = sympy.Symbol('b')
+A = sympy.Symbol('A')
+B = sympy.Symbol('B')
+C = sympy.Symbol('C')
+D = sympy.Symbol('D')
+gammaj = sympy.Symbol('gammaj')
+gammaj1 = sympy.Symbol('gammaj_plus_1')
+alphai = sympy.Symbol('alphai')
+alphaj = sympy.Symbol('alphaj')
+thetai = sympy.Symbol('thetai')
+thetaj = sympy.Symbol('thetaj')
+x_hati = sympy.Symbol("xhati")
+x_hatj = sympy.Symbol("xhatj")
+y_hati = sympy.Symbol("yhati")
+y_hatj = sympy.Symbol("yhatj")
+xi = sympy.Symbol('xi')
+xj = sympy.Symbol('xj')
+yi = sympy.Symbol('yi')
+yj = sympy.Symbol('yj')
+delta_sj = sympy.Symbol('delta_sj')
+sj = sympy.Symbol('sj')
 
-# def f(r):
-#     x, y = r
-#     return 2*x**2 + 8*x*y + 2*y**2 + 10*(np.sin(y)*np.sin(y)) + 10*np.cos(x*y)
-
-# def df(r):
-#     x, y = r
-#     return np.array([8*y - 10*y*np.sin(x*y) + 4*x, 4*y + 8*x - 10*x*np.sin(x*y) + 10*np.sin(2*y)])
-    
-# def H(r):
-#     x, y = r
-#     return np.array([[8*y - 10*y*np.sin(x*y) + 4*x], [4*y + 8*x - 10*x*np.sin(x*y) + 10*np.sin(2*y)]])
-
-# r = -4, np.pi/np.pi   
-
-
-# s = la.solve(H(r), df(r))
-# print(s)
-
-A = np.array([[1, 567, 1], [1, 1, 333], [1, 456, 1]])
-b = np.array([1938, 1, 9])
-x = la.solve(A, b)
-print(x)
+f = (a*sj+b)*((A*sj+B)/(sj**2+C*sj+D))
+integral = sympy.integrate(f, (sj, 0, delta_sj))
+integral.subs({A:-sympy.cos(thetai-thetaj), B:(x_hati-xj)*sympy.cos(thetaj)+sympy.sin(thetaj)*(y_hati-yj), C:2*xj*sympy.cos(thetaj)-2*(x_hati*sympy.cos(thetaj))+2*yj*sympy.sin(thetaj)-2*y_hati*sympy.sin(thetaj), D:(x_hati-xj)**2+(y_hati-yj)**2, a:(gammaj1-gammaj)/(delta_sj), b:(gammaj), gammaj:sympy.IndexedBase('γ')[j], gammaj1:sympy.IndexedBase('γ')[j+1], thetai:sympy.IndexedBase('θ')[i],thetaj:sympy.IndexedBase('θ')[j], x_hati:sympy.IndexedBase(sympy.symbols("xhat " ))[i], x_hatj:sympy.IndexedBase(sympy.symbols("xhat " ))[j], y_hati:sympy.IndexedBase(sympy.symbols("yhat " ))[i], y_hatj:sympy.IndexedBase(sympy.symbols("yhat " ))[j], xi:sympy.IndexedBase('x')[i], yi:sympy.IndexedBase('y')[i], xj:sympy.IndexedBase('x')[i], yj:sympy.IndexedBase('y')[j], delta_sj:sympy.IndexedBase('Δs')[j]})

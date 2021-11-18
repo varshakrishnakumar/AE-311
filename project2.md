@@ -106,3 +106,25 @@ $$2\pi U_\infty \begin{bmatrix} \sin_(\theta_1 - \alpha) \\ \sin_(\theta_2 - \al
 $$\int_0^{\Delta s_j} (as_j + b) \frac{As_j + B}{s_j^2 + Cs_j + D} ds_j$$ 
   
   which is obtained from performing the calculation of the normal derivative of the velocity potential, can be found in Appendix B. 
+
+---
+
+### **VI. Methods of computing other quantities using the Linear System**
+
+ ##### *A. Coefficient of Lift* 
+ ##### *B. Coefficient of Moment about the Leading Edge* 
+ ##### *C. Center of Pressure* 
+ ##### *D. Aerodynamic Center* 
+
+
+
+---
+
+
+### **Appendix A**
+
+
+
+
+
+### **Appendix B**
