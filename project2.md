@@ -13,14 +13,15 @@ The airfoil surface can be broken down into numerous discrete panels. To use the
 
 #### **2. Create a sketch that defines your nomenclature. How are the panels indexed and defined, what local coordinate systems and variables are needed to define quantities on each panel, etc.?** 
 
-![alt text](Q2sketch.PNG)
+![alt text](Q2sketch.PNG "Sketch of sample airfoil containing singular panel analysis")
+
 
 The surface of the airfoil can be broken down into discrete "panels", where each panel is represented using a vortex sheet of linear distribution. The reasoning for this theory is that as the number of panels are increased, the velocity boundary conditions are imposed on an increasingly better representation of the airfoil surface. On the top surface of the airfoil, each panel is represented by $i$, and a numerical incrementation of 1. Similarly, each panel on the bottom surface is represented by $j$., and a numerical incrementation of 1. 
 
 *The control point at j can be written as:* 
 
 
-$\hat{x_j} = {x_j} + \frac{\Delta{s_j^x}}{2}$,
+$$\hat{x_j} = {x_j} + \frac{\Delta{s_j^x}}{2}$$
 
 where 
 
@@ -28,7 +29,7 @@ $${\Delta}s_j^x = {\Delta}s_j cos{\theta_j}$$
 
 And
 
-$\hat{y_j} = y_j + \frac{\Delta{s_j^y}}{2}$,
+$$\hat{y_j} = y_j + \frac{\Delta{s_j^y}}{2}$$
 
 where
 
