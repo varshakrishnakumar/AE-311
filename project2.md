@@ -118,7 +118,8 @@ $$\int_0^{\Delta s_j} (as_j + b) \frac{As_j + B}{s_j^2 + Cs_j + D} ds_j$$
 
 #### *A. Coefficient of Lift* 
 
- Circulation is represented by $\Gamma$ = $\Sigma_{j=1}^N \gamma_j s_j ds_j$.
+
+Circulation is represented by $\Gamma$ = $\Sigma_{j=1}^N \gamma_j s_j ds_j$.
 
 Lift per unit span is represented by $L' = \rho_{\infty} V_{\infty} \Sigma_{j=1}^N \gamma s ds$
 
@@ -132,27 +133,27 @@ The lift coefficient can be found by using the lift per unit span (using a for l
 
 #### *B. Coefficient of Moment about the Leading Edge* 
 
- $M’_{LE} = -\rho V_{\infty} \int_0^c\gamma(x)\partial x$
+$M’_{LE} = -\rho V_{\infty} \int_0^c\gamma(x)\partial x$
 
- $M’_{LE} = -\rho V_{\infty} \int_0^c\gamma \partial s_j \sqrt{(x_j + s_j cos(\theta_j)^2 + (y_j + s_j sin(\theta_j))^2}ds_j$
+$M’_{LE} = -\rho V_{\infty} \int_0^c\gamma \partial s_j \sqrt{(x_j + s_j cos(\theta_j)^2 + (y_j + s_j sin(\theta_j))^2}ds_j$
 
- $c_{m(LE)} = M’LE/L’/c$ 
+$c_{m(LE)} = M’LE/L’/c$ 
 
 To obtain the coefficient of moment about the Leading Edge, first solve for the moment about the leading edge per unit span. Then, the *Scipy* quad function can be used to solve for the integral. Then, divide by the lift per unit span and chord length.
 
 #### *C. Center of Pressure* 
 
- The Center of Pressure can be evaluated by using the properties of the relation between force, distance, and moment. A proportion using the property of $x_{cp} = M'_{LE}/L'$ can be utilized to then proceed with the procedure for obraining the Center of Pressure. 
+The Center of Pressure can be evaluated by using the properties of the relation between force, distance, and moment. A proportion using the property of $x_{cp} = M'_{LE}/L'$ can be utilized to then proceed with the procedure for obraining the Center of Pressure. 
 
 #### *D. Aerodynamic Center* 
 
- Using:
+Using:
 
- $C_D = \frac{D_j'}{0.5\rho V_{\infty}^2 s_j c}$
- 
- $\partial M_{AC} / \partial \alpha = 0$
+$C_D = \frac{D_j'}{0.5\rho V_{\infty}^2 s_j c}$
 
- Given that the derivative of the moment about the aerodynamic center in relation to the rate of change of the Angle of Attack is 0, it can be assumed that the Aerodynamic Center is at 0, since Drag can not be calculated using the vortex panel method shown in previous sections. 
+$\partial M_{AC} / \partial \alpha = 0$
+
+Given that the derivative of the moment about the aerodynamic center in relation to the rate of change of the Angle of Attack is 0, it can be assumed that the Aerodynamic Center is at 0, since Drag can not be calculated using the vortex panel method shown in previous sections. 
 
 
 
