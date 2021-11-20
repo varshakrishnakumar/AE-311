@@ -116,7 +116,7 @@ $$\int_0^{\Delta s_j} (as_j + b) \frac{As_j + B}{s_j^2 + Cs_j + D} ds_j$$
 
 ### **VI. Methods of computing other quantities using the Linear System**
 
- #### *A. Coefficient of Lift* 
+#### *A. Coefficient of Lift* 
 
  Circulation is represented by $\Gamma$ = $\Sigma_{j=1}^N \gamma_j s_j ds_j$.
 
@@ -130,7 +130,7 @@ The lift coefficient can be found by using the lift per unit span (using a for l
 
 
 
- #### *B. Coefficient of Moment about the Leading Edge* 
+#### *B. Coefficient of Moment about the Leading Edge* 
 
  $M’_{LE} = -\rho V_{\infty} \int_0^c\gamma(x)\partial x$
 
@@ -140,11 +140,11 @@ The lift coefficient can be found by using the lift per unit span (using a for l
 
 To obtain the coefficient of moment about the Leading Edge, first solve for the moment about the leading edge per unit span. Then, the *Scipy* quad function can be used to solve for the integral. Then, divide by the lift per unit span and chord length.
 
- #### *C. Center of Pressure* 
+#### *C. Center of Pressure* 
 
  The Center of Pressure can be evaluated by using the properties of the relation between force, distance, and moment. A proportion using the property of $x_{cp} = M'_{LE}/L'$ can be utilized to then proceed with the procedure for obraining the Center of Pressure. 
 
- #### *D. Aerodynamic Center* 
+#### *D. Aerodynamic Center* 
 
  Using:
 
@@ -161,12 +161,12 @@ To obtain the coefficient of moment about the Leading Edge, first solve for the 
 
 ### **Appendix A**
 
-https://github.com/varshakrishnakumar/AE-311/Appendices/AppendixA.pdf
+https://github.com/varshakrishnakumar/AE-311/blob/main/Appendices/AppendixA.pdf
 
-<!-- ![Appendix A](Appendices\AppendixA.pdf){#fig:SamplePaneli width=40% height=40%} -->
+
 
 ### **Appendix B**
 
 https://github.com/varshakrishnakumar/AE-311/Python-Materials/vortexanalysis.ipynb
-https://github.com/varshakrishnakumar/AE-311/Appendices/AppendixB.md
+https://github.com/varshakrishnakumar/AE-311/blob/main/Appendices/AppenixB.pdf
 
